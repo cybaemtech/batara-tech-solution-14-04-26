@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ash Grey + Logo Blue theme */
+    --background: 220 14% 93%;
+    --foreground: 220 35% 12%;
+
+    --card: 0 0% 99%;
+    --card-foreground: 220 35% 12%;
+
+    --popover: 0 0% 99%;
+    --popover-foreground: 220 35% 12%;
+
+    --primary: 214 72% 37%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 88%;
+    --secondary-foreground: 220 35% 12%;
+
+    --muted: 220 12% 90%;
+    --muted-foreground: 220 10% 48%;
+
+    --accent: 220 58% 22%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 84%;
+    --input: 220 14% 84%;
+    --ring: 214 72% 37%;
+
+    --radius: 0.375rem;
+
+    /* Custom brand tokens */
+    --ink: 220 58% 14%;
+    --ink-2: 220 52% 20%;
+    --steel: 220 14% 88%;
+    --slate: 220 14% 84%;
+    --accent-orange: 214 72% 37%;
+    --accent-orange-2: 214 72% 44%;
+    --cyan: 220 58% 22%;
+    --silver: 220 10% 50%;
+    --light: 220 35% 12%;
+    --grid-line: 220 35% 25% / 0.05;
+
+    --sidebar-background: 220 58% 14%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 214 72% 37%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 52% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 35% 25%;
+    --sidebar-ring: 214 72% 37%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    @apply bg-background text-foreground;
+    overflow-x: clip;
+    max-width: 100vw;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(hsl(var(--grid-line)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--grid-line)) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-mono-brand {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Unified section title — apply to every h2 section heading sitewide */
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold leading-tight tracking-tight;
+  }
+
+  /* Unified section eyebrow label — the small uppercase tag above section titles */
+  .section-label {
+    @apply font-mono text-[13px] font-medium tracking-[0.18em] uppercase;
+  }
+}
+
+/* Animations */
+@keyframes spin-slow {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* For elements that fill their container (inset-0) — rotate around own center */
+@keyframes spin-ring {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes core-pulse {
+  0%, 100% { box-shadow: 0 0 30px hsl(214 72% 37% / 0.2), inset 0 0 20px hsl(214 72% 37% / 0.1); }
+  50% { box-shadow: 0 0 60px hsl(214 72% 37% / 0.35), inset 0 0 30px hsl(214 72% 37% / 0.15); }
+}
+
+@keyframes scan-line {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes badge-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.2); }
+}

@@ -1,0 +1,122 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "5k6TidBqQ25ajvpf_lIop"
+uri = "file://public/ind-automotive.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ULI9gFm8Mj6RNjWFVQwRT"
+uri = "file://public/ind-aerospace.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "NKCqFXCu96OAj9xI3ZpD1"
+uri = "file://public/ind-electro.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "l_Iya6B3ewdsLo2TCxNFw"
+uri = "file://public/ind-medical.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "CHKmYXBvveTlj1vDig-YZ"
+uri = "file://public/ind-consumer.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "4l37zJdYzwrf2dy4gO94y"
+uri = "file://public/ind-heavy.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "xhtCNRrdRqAGpsOh3kfH3"
+uri = "file://public/executives/sacheen.png"
+type = "image"
+title = "sacheen executive portrait"
+
+[[generated]]
+id = "acCXPtWRV_fK1xZg2SN0f"
+uri = "file://public/executives/dileesh.png"
+type = "image"
+title = "dileesh executive portrait"
+
+[[generated]]
+id = "VO7RJ7n-yvnvBAXkFFZ3D"
+uri = "file://public/executives/vipin.png"
+type = "image"
+title = "vipin executive portrait"
+
+[[generated]]
+id = "IUSSM5e-ize606JYhAGmo"
+uri = "file://public/executives/icon-sacheen.png"
+type = "image"
+title = "user avatar icon blue"
+
+[[generated]]
+id = "-koX97VpodY6-H-ao_mBJ"
+uri = "file://public/executives/icon-dileesh.png"
+type = "image"
+title = "user avatar icon navy tie"
+
+[[generated]]
+id = "I4dY7c_LJxfo8BFu-VkVd"
+uri = "file://public/executives/icon-vipin.png"
+type = "image"
+title = "user avatar icon steel blue"
+
+[[generated]]
+id = "jyiSLoTzy5fqO6y8Nbs5q"
+uri = "file://public/careers-hero-bg.png"
+type = "image"
+title = "careers hero engineering background"
+
+[[generated]]
+id = "KdULdtn9AjLhi2z0yBWjo"
+uri = "file://public/about-hero-bg.png"
+type = "image"
+title = "engineering facility hero background"
+
+[[generated]]
+id = "gIWlLTBrJeTDsy3GMqHrt"
+uri = "file://public/svc-engineering-design.png"
+type = "image"
+title = "engineering design analysis"
+
+[[generated]]
+id = "2ENfLg7lT2GOY0JwBOL3l"
+uri = "file://public/svc-manufacturing-engineering.png"
+type = "image"
+title = "manufacturing engineering mould"
+
+[[generated]]
+id = "JFUzxpdnxXnKKK7IOguaq"
+uri = "file://public/svc-integrated-project.png"
+type = "image"
+title = "integrated project delivery"
+
+[[generated]]
+id = "x97up_dOv_h-wxyVxI1B2"
+uri = "file://public/svc-technical-animation.png"
+type = "image"
+title = "technical animation publication"
+
+[[generated]]
+id = "drmlPGHmp-9xJQgy-QW85"
+uri = "file://public/svc-electronics-pcb.png"
+type = "image"
+title = "electronics PCB manufacturing"
+
+[[generated]]
+id = "zKSW5z1eH5Or3rp5s_spk"
+uri = "file://public/industries-hero-bg.png"
+type = "image"
+title = "industries hero background"

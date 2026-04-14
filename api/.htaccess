@@ -1,0 +1,71 @@
+# Bata Ra Techno Solutions - API Security Configuration
+
+# Enable Apache Rewrite Engine
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /api/
+    
+    # Block direct access to .log files
+    RewriteRule \.log$ - [F,L]
+end
+</IfModule>
+
+# CORS Headers for contact form submissions
+<IfModule mod_headers.c>
+    # Allow requests from any origin (for development)
+    # For production, specify your domain: https://yourdomain.com
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+    
+    # Cache control
+    Header set Cache-Control "public, max-age=0"
+</IfModule>
+
+# PHP Configuration
+<IfModule mod_php8.c>
+    # Display errors (set to Off in production)
+    php_flag display_errors On
+    php_value error_reporting E_ALL
+    
+    # Upload limits
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    
+    # Execution time
+    php_value max_execution_time 30
+    
+    # Memory limit
+    php_value memory_limit 128M
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "\.(php|sql|config|env|log)$">
+    <IfModule mod_php.c>
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Allow access to contact-handler.php specifically
+<Files "contact-handler.php">
+    <IfModule mod_php.c>
+        Allow from all
+    </IfModule>
+</Files>
+
+# Security Headers
+<IfModule mod_headers.c>
+    # Prevent MIME sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Enable XSS protection
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Clickjacking protection
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Gzip Compression (optional)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
