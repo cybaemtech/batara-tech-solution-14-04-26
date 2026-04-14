@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Briefcase, Users, Zap, Shield, Star, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -101,6 +102,12 @@ const fadeUp = {
 };
 
 const Careers = () => {
+  const navigate = useNavigate();
+
+  const goToContact = () => {
+    navigate("/", { state: { scrollTo: "contact" } });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -140,15 +147,15 @@ const Careers = () => {
               At Batara Techno Solutions, every engineer's output ends on a shop floor. If you want work that matters —
               that goes from your screen into aerospace hardware, automotive bodies, and medical instruments — this is your place.
             </p>
-            <a
-              href="mailto:careers@bataratechnosolutions.com"
+            <button
+              onClick={goToContact}
               className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display font-extrabold text-sm tracking-wide rounded-lg hover:bg-[hsl(214_72%_44%)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_hsl(214_72%_37%/0.5)] transition-all relative overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
               <Mail className="w-4 h-4 relative" />
               <span className="relative">Send Your Application</span>
               <ArrowRight className="w-4 h-4 relative group-hover:translate-x-1 transition-transform" />
-            </a>
+            </button>
           </motion.div>
         </div>
       </section>
