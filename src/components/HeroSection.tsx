@@ -2,6 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
+  const scrollToServices = () => {
+    const el = document.getElementById("our-services");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="relative min-h-screen pt-[76px] overflow-hidden bg-[#060c1a] z-[1]">
       {/* Background video */}
@@ -109,13 +114,13 @@ const HeroSection = () => {
               <span className="relative">Discuss Your Problem Statement</span>
               <ArrowRight className="w-4 h-4 relative group-hover:translate-x-1 transition-transform" />
             </a>
-            <a
-              href="#services"
+            <button
+              onClick={scrollToServices}
               className="inline-flex items-center gap-2 px-5 py-3.5 border border-white/20 text-white/75 text-sm font-medium rounded-lg hover:border-white/40 hover:text-white transition-all"
             >
               <ChevronDown className="w-4 h-4" />
               Explore Services
-            </a>
+            </button>
           </motion.div>
         </div>
       </div>
