@@ -11,8 +11,8 @@ const WA_LINK = "https://wa.me/918105111599";
 type NavItem = { label: string; desc: string; href: string; icon: LucideIcon };
 
 const industriesLeft: NavItem[] = [
-  { label: "Aerospace", desc: "High-precision engineering for flight-critical systems.", href: "/industries#aerospace", icon: Plane },
   { label: "Automotive", desc: "Module design & vehicle engineering across all segments.", href: "/industries#automotive", icon: Car },
+  { label: "Aerospace", desc: "High-precision engineering for flight-critical systems.", href: "/industries#aerospace", icon: Plane },
   { label: "Industrial Machinery", desc: "Purpose-built equipment for complex industrial environments.", href: "/industries#industrial-machinery", icon: Cog },
 ];
 

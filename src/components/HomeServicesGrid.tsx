@@ -154,7 +154,7 @@ const HomeServicesGrid = () => {
             {["Automotive", "Aerospace", "Industrial Machinery", "Industrial Automation", "Electro Mechanical", "Heavy Machinery", "Medical Devices"].map((ind) => (
               <span
                 key={ind}
-                className="px-3 py-1.5 border border-border rounded-full text-[12px] text-silver font-medium hover:border-primary/40 hover:text-primary hover:bg-primary/5 transition-all cursor-default"
+                className="px-3 py-1.5 border border-border rounded-full text-[12px] text-white font-medium hover:border-primary/40 hover:text-primary hover:bg-primary/5 transition-all cursor-default"
               >
                 {ind}
               </span>

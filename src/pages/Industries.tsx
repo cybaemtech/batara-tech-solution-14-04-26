@@ -16,24 +16,6 @@ const fadeUp = {
 
 const industries = [
   {
-    id: "aerospace",
-    icon: Plane,
-    label: "Aerospace",
-    tagline: "High-Precision Engineering for Flight-Critical Systems",
-    summary:
-      "We support aerospace manufacturers in navigating the most demanding engineering environments — from structural integrity validation to seamless EBOM-to-MBOM transitions. Our work helps reduce production backlogs and ensures full regulatory compliance across every stage of the design-to-production cycle.",
-    points: [
-      "Detailed stress analysis for structural integrity assurance",
-      "EBOM to MBOM transition management",
-      "Design-to-production cycle optimisation",
-      "Regulatory compliance across aerospace standards",
-      "Manufacturing readiness for aircraft components and major assemblies",
-    ],
-    image: "/Aerospace.avif",
-    accent: "from-blue-700/10 to-slate-800/5",
-    tag: "Tier-1 & OEM Ready",
-  },
-  {
     id: "automotive",
     icon: Car,
     label: "Automotive",
@@ -50,6 +32,24 @@ const industries = [
     image: "/Automotive.avif",
     accent: "from-slate-700/10 to-blue-900/5",
     tag: "OEM & Tier-2 Supply Chain",
+  },
+  {
+    id: "aerospace",
+    icon: Plane,
+    label: "Aerospace",
+    tagline: "High-Precision Engineering for Flight-Critical Systems",
+    summary:
+      "We support aerospace manufacturers in navigating the most demanding engineering environments — from structural integrity validation to seamless EBOM-to-MBOM transitions. Our work helps reduce production backlogs and ensures full regulatory compliance across every stage of the design-to-production cycle.",
+    points: [
+      "Detailed stress analysis for structural integrity assurance",
+      "EBOM to MBOM transition management",
+      "Design-to-production cycle optimisation",
+      "Regulatory compliance across aerospace standards",
+      "Manufacturing readiness for aircraft components and major assemblies",
+    ],
+    image: "/Aerospace.avif",
+    accent: "from-blue-700/10 to-slate-800/5",
+    tag: "Tier-1 & OEM Ready",
   },
   {
     id: "industrial-machinery",
