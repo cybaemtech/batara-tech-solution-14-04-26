@@ -29,7 +29,8 @@ const industries = [
   },
   {
     name: "Industrial Automation",
-    description: "PLC solutions, brownfield revamps & smart factory integration",
+    description:
+      "PLC solutions, brownfield revamps & smart factory integration",
     icon: Cpu,
     bg: "/Industrial-Automation.avif",
     accent: "hsl(220 58% 30%)",
@@ -45,7 +46,8 @@ const industries = [
   },
   {
     name: "Heavy Machinery",
-    description: "Structural design for off-highway & skid-mounted plant assets",
+    description:
+      "Structural design for off-highway & skid-mounted plant assets",
     icon: Truck,
     bg: "/Heavy-Machinery.avif",
     accent: "hsl(220 58% 22%)",
@@ -68,9 +70,7 @@ const ServicesSection = () => {
         >
           <div className="flex items-center gap-3 mb-4">
             <div className="w-8 h-0.5 bg-primary" />
-            <span className="section-label text-primary">
-              Sectors We Serve
-            </span>
+            <span className="section-label text-primary">Sectors We Serve</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <h2 className="section-title text-primary-foreground">
@@ -78,7 +78,7 @@ const ServicesSection = () => {
             </h2>
             <Link
               to="/industries"
-              className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all shrink-0"
+              className="inline-flex items-center gap-2 text-white text-sm font-semibold hover:gap-3 transition-all shrink-0"
             >
               All industries <ArrowRight className="w-4 h-4" />
             </Link>
