@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 
 const industries = [
   {
-    name: "Aerospace",
-    description: "Stress analysis, EBOM-to-MBOM & manufacturing readiness",
-    icon: Plane,
-    bg: "/Aerospace.avif",
-    accent: "hsl(214 72% 37%)",
-    href: "/industries#aerospace",
-  },
-  {
     name: "Automotive",
     description: "Vehicle module design, bus, coach & trailer engineering",
     icon: Car,
     bg: "/Automotive.avif",
     accent: "hsl(220 58% 22%)",
     href: "/industries#automotive",
+  },
+  {
+    name: "Aerospace",
+    description: "Stress analysis, EBOM-to-MBOM & manufacturing readiness",
+    icon: Plane,
+    bg: "/Aerospace.avif",
+    accent: "hsl(214 72% 37%)",
+    href: "/industries#aerospace",
   },
   {
     name: "Industrial Machinery",
